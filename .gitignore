@@ -1,0 +1,60 @@
+# General
+.DS_Store
+Thumbs.db
+
+# React specific (assuming inside frontend directory)
+/frontend/node_modules/
+/frontend/build/
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Flask specific (assuming inside backend directory)
+/backend/venv/
+/backend/__pycache__/
+/backend/instance/
+/backend/*.pyc
+/backend/*.pyo
+/backend/*.pyd
+/backend/.Python
+/backend/db.sqlite
+/backend/db.sqlite3
+/backend/*.sqlite
+/backend/*.sqlite3
+/backend/*.pyd
+/backend/*.pyc
+/backend/.env
+/backend/.mypy_cache/
+/backend/.pytest_cache/
+/backend/.coverage
+/backend/.coverage.*
+/backend/.cache
+/backend/nosetests.xml
+/backend/coverage.xml
+/backend/*.cover
+/backend/*.log
+/backend/.local
+/backend/.pyre/
+
+# IDE specific
+/.idea/
+/.vscode/
+*.swp
+*~
+*.project
+*.classpath
+*.c9/
+*.launch
+/.settings/
+*.sublime-workspace
+analyse/AAPL.json
+
+
+#dont push virtual environment
+.venv/
+/.venv/
