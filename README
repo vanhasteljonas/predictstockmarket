@@ -1,0 +1,68 @@
+BACKEND
+# Change directory to the backend
+cd backend
+
+# Create a virtual environment if not exist or activate the existing virtual environment
+# On MacOS/Linux
+python3 -m venv venv
+# Activate the virtual environment
+# On Windows
+venv\Scripts\activate
+    # if you have an error like "execution of scripts is disabled on this system" run the following command
+    # On Windows
+    # first open powershell as administrator and run the following command
+    Get-ExecutionPolicy
+    # if the output is Restricted then run the following command
+    Set-ExecutionPolicy RemoteSigned
+    # then run the following command
+    venv\Scripts\activate
+# On MacOS/Linux
+source venv/bin/activate
+
+# Install the dependencies for the backend
+pip install -r requirements.txt
+
+# After installing packages update the requirements.txt file
+pip freeze > requirements.txt
+
+# Set the FLASK_APP environment variable in the file .flaskenv
+
+# Start the backend
+flask run
+
+# Open your browser and go to http://localhost:5000/
+
+# To stop the application, press Ctrl + C in the terminal.
+
+# To deactivate the virtual environment, run the following command:
+# On Windows
+deactivate
+# On MacOS/Linux
+source deactivate
+
+
+
+
+
+
+
+
+
+FRONTEND
+# Change directory to the frontend
+cd frontend
+
+# Install the dependencies for the frontend
+npm install
+
+# Start the frontend
+npm start
+
+# Open your browser and go to http://localhost:3000/
+# You should see the frontend of the application. You can now interact with the application.
+
+# To stop the application, press Ctrl + C in the terminal.
+
+# To build the frontend for production, run the following command:
+npm run build
+# This will create a build folder in the frontend directory. You can then serve the build folder using a static file server like Nginx or Apache.
